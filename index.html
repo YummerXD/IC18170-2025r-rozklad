@@ -488,8 +488,18 @@ tr:hover {
 </div>
 
 <div class="footer">
-  <p>© 2025 PKP Intercity | Dokument oficjalny | Wersja 1.3 | Data generowania: <span id="current-date"></span></p>
+  <p>© 2025 Niezależny Projekt Transportowy | Wersja 1.4</p>
+  <p>
+    <small>
+      Dane rozkładu jazdy: PKP Intercity (stan na <span id="current-date"></span>).<br>
+      Strona nie jest oficjalnym serwisem PKP Intercity.
+    </small>
+  </p>
 </div>
+
+<script>
+  document.getElementById('current-date').textContent = new Date().toLocaleDateString('pl-PL');
+</script>
 
 <script>
   document.getElementById('current-date').textContent = new Date().toLocaleDateString('pl-PL');
